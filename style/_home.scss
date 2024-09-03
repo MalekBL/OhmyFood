@@ -9,3 +9,18 @@ header{
         height: 36px;
     }
 }
+.location{
+    background-color:#EAEAEA;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    height: 50px;
+    display: flex;
+    justify-content:center;
+    gap: 17px;
+    align-items: center;
+    font-size: 16px;
+    input{
+        border: 0;
+        background-color: #EAEAEA;
+        width: 109px;
+    }
+}
