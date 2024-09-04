@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   height: 63px;
   width: 100%;
@@ -5,7 +6,8 @@ header {
   justify-content: center;
   align-items: center;
 }
-header .logo {
+
+.logo {
   height: 36px;
 }
 
@@ -19,10 +21,64 @@ header .logo {
   align-items: center;
   font-size: 16px;
 }
+
 .location input {
   border: 0;
   background-color: #EAEAEA;
   width: 109px;
+}
+
+.explore {
+  text-align: center; /* Centre le texte à l'intérieur */
+  padding: 39px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: px;
+  margin-left: auto; /* Pour centrer la section horizontalement */
+  margin-right: auto; /* Pour centrer la section horizontalement */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre les éléments enfants horizontalement */
+}
+
+.explore h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  width: 275px;
+  height: 68px;
+}
+
+.explore p {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 20px;
+  width: 315px;
+  height: 46px;
+}
+
+.cta-button {
+  display: inline-block;
+  background: linear-gradient(100deg, #9356DC, #FF79DA);
+  border-radius: 25px;
+  border: none;
+  width: 218px;
+  height: 50px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.fonctionnement-home {
+  text-align: center; /* Centre le texte à l'intérieur */
+  padding: 39px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 375px;
+  margin-left: auto; /* Pour centrer la section horizontalement */
+  margin-right: auto; /* Pour centrer la section horizontalement */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre les éléments enfants horizontalement */
 }
 
 * {
