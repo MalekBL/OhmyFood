@@ -69,6 +69,8 @@ header {
 
 .fonctionnement-home {
   margin-top: 40px;
+  text-align: left; /* Aligner le texte à gauche */
+  padding-left: 20px; /* Espacement du contenu vers la gauche */
 }
 
 .fonctionnement-home h2 {
@@ -81,16 +83,18 @@ header {
 .step {
   display: flex;
   align-items: center;
-  background-color: #F5F5F5;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  border-radius: 20px;
-  margin: 20px;
-  gap: 20px; /* Espace entre les éléments */
+  background-color: #F6F6F6; /* Couleur du fond */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Ombre pour donner un effet de profondeur */
+  padding: 20px; /* Espace intérieur autour du contenu */
+  border-radius: 20px; /* Coins arrondis */
+  margin: 20px; /* Espacement extérieur entre les éléments */
+  gap: 20px; /* Espacement entre les icônes et le texte */
+  position: relative; /* Position pour permettre l'alignement des cercles */
+  left: -5px;
 }
 
 .circle {
-  width: 24px; /* Taille du cercle */
+  width: 24px;
   height: 24px;
   background-color: #9356DC;
   color: white;
@@ -99,19 +103,23 @@ header {
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  font-size: 14px;
-  margin-right: 10px; /* Espace entre le numéro et l'icône */
+  position: absolute;
+  left: -15px;
+}
+
+.step-content {
+  margin-left: 50px; /* Décale le contenu à droite pour laisser de l'espace au cercle */
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Alignement vertical du texte et de l'icône */
+  justify-content: flex-start;
+  width: 100%;
 }
 
 .step i {
   font-size: 20px;
-  color: #7E7E7E;
-}
-
-.step-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  color: #7E7E7E; /* Couleur de l'icône */
+  margin-right: 10px; /* Espacement entre l'icône et le texte */
 }
 
 .step h3 {
@@ -119,6 +127,18 @@ header {
   font-weight: 500;
   color: #000000;
   margin: 0;
+}
+
+/*Restaurant*/
+.card-container img {
+  width: 340px;
+  height: 251px;
+  border-radius: 15px;
+}
+
+.card img {
+  width: 346px;
+  height: 240px;
 }
 
 * {
