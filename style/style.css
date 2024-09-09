@@ -29,15 +29,15 @@ header {
 }
 
 .explore {
-  text-align: center; /* Centre le texte à l'intérieur */
+  text-align: center;
   padding: 39px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  margin-left: auto; /* Pour centrer la section horizontalement */
-  margin-right: auto; /* Pour centrer la section horizontalement */
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centre les éléments enfants horizontalement */
+  align-items: center;
 }
 
 .explore h2 {
@@ -69,8 +69,8 @@ header {
 
 .fonctionnement-home {
   margin-top: 40px;
-  text-align: left; /* Aligner le texte à gauche */
-  padding-left: 20px; /* Espacement du contenu vers la gauche */
+  text-align: left;
+  padding-left: 20px;
 }
 
 .fonctionnement-home h2 {
@@ -83,13 +83,13 @@ header {
 .step {
   display: flex;
   align-items: center;
-  background-color: #F6F6F6; /* Couleur du fond */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Ombre pour donner un effet de profondeur */
-  padding: 20px; /* Espace intérieur autour du contenu */
-  border-radius: 20px; /* Coins arrondis */
-  margin: 20px; /* Espacement extérieur entre les éléments */
-  gap: 20px; /* Espacement entre les icônes et le texte */
-  position: relative; /* Position pour permettre l'alignement des cercles */
+  background-color: #F6F6F6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px;
+  gap: 20px;
+  position: relative;
   left: -5px;
 }
 
@@ -108,18 +108,18 @@ header {
 }
 
 .step-content {
-  margin-left: 50px; /* Décale le contenu à droite pour laisser de l'espace au cercle */
+  margin-left: 50px;
   display: flex;
   flex-direction: row;
-  align-items: center; /* Alignement vertical du texte et de l'icône */
+  align-items: center;
   justify-content: flex-start;
   width: 100%;
 }
 
 .step i {
   font-size: 20px;
-  color: #7E7E7E; /* Couleur de l'icône */
-  margin-right: 10px; /* Espacement entre l'icône et le texte */
+  color: #7E7E7E;
+  margin-right: 10px;
 }
 
 .step h3 {
@@ -136,9 +136,10 @@ header {
   gap: 18px;
   margin: 57px 3px;
   max-width: 375px;
+  padding: 3px;
 }
 
-h2 {
+h2 .restaurant {
   width: 275px;
   size: 24px;
 }
@@ -208,6 +209,55 @@ h2 {
   color: #008766;
   font-size: 14px;
   padding: 5px 10px;
+}
+
+footer {
+  background-color: #353535;
+  padding: 20px;
+  color: #ffffff;
+  width: 375px;
+  height: 186px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 375px;
+  height: 186px;
+  gap: 16px;
+}
+
+.footer-logo {
+  font-family: "Shrikhand";
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 16px;
+  width: 139px;
+  height: 27px;
+  font-weight: 400;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  width: 190px;
+  height: 99px;
+}
+
+.footer-links li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-links li i {
+  margin-right: 10px;
+  width: 11px;
+  height: 13px;
+  margin-top: 2px;
+  color: #FFFFFF;
 }
 
 * {
