@@ -20,6 +20,7 @@ header {
   gap: 17px;
   align-items: center;
   font-size: 16px;
+  position: relative;
 }
 
 .location input {
@@ -32,12 +33,12 @@ header {
   text-align: center;
   padding: 39px;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #F6F6F6;
 }
 
 .explore h2 {
@@ -69,13 +70,14 @@ header {
 
 .fonctionnement-home {
   margin-top: 40px;
+  margin-bottom: 68px;
   text-align: left;
   padding-left: 20px;
 }
 
 .fonctionnement-home h2 {
   font-size: 24px;
-  margin: 48px 80px 26px 20px;
+  margin: 48px 80px 26px 0px;
   width: 275px;
   height: 31px;
 }
@@ -134,9 +136,8 @@ header {
   display: flex;
   flex-direction: column;
   gap: 18px;
-  margin: 57px 3px;
-  max-width: 375px;
-  padding: 3px;
+  padding: 57px 18px;
+  background-color: #F6F6F6;
 }
 
 h2 .restaurant {
@@ -150,15 +151,14 @@ h2 .restaurant {
   background-color: #ffffff;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  width: 340px;
 }
 
 /* Image des cartes */
 .restaurant-card img {
-  width: 346px;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 231px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -192,9 +192,7 @@ h2 .restaurant {
 /* Icône du cœur alignée à droite */
 .icon-container i {
   color: #101010;
-  font-size: 18px;
-  width: 22px;
-  height: 21px;
+  font-size: 22px;
   border: 1px;
 }
 
@@ -215,7 +213,6 @@ footer {
   background-color: #353535;
   padding: 20px;
   color: #ffffff;
-  width: 375px;
   height: 186px;
 }
 
@@ -223,7 +220,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 375px;
   height: 186px;
   gap: 16px;
 }
