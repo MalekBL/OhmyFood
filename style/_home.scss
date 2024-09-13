@@ -56,25 +56,29 @@ header {
 }
 
 .cta-button {
-    display: inline-block;
-    background: linear-gradient(0deg, #9356DC, #FF79DA);
-    border-radius: 25px;
-    border: none;
-    width: 218px;
-    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, #9356DC -11.44%, #FF79DA 123.93%);
     color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
     font-size: 16px;
-    font-weight: 500;
-    transition: all 0.3s ease; /* Transition pour les effets */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
 }
+
 
 .cta-button:hover {
     background: linear-gradient(0deg, #A56DE8, #FF85E5); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
     border: 2px solid #008CFF; 
     transform: scale(1.05);
+    text-decoration: underline;
+    text-decoration-color:#89C8FA; 
 }
 
 .fonctionnement-home {
