@@ -58,7 +58,7 @@ header {
 
 .cta-button {
   display: inline-block;
-  background: linear-gradient(100deg, #9356DC, #FF79DA);
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
   border-radius: 25px;
   border: none;
   width: 218px;
@@ -66,6 +66,16 @@ header {
   color: white;
   font-size: 16px;
   font-weight: 500;
+  transition: all 0.3s ease; /* Transition pour les effets */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background: linear-gradient(0deg, #A56DE8, #FF85E5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border: 2px solid #008CFF;
+  transform: scale(1.05);
 }
 
 .fonctionnement-home {
@@ -181,19 +191,41 @@ h2 .restaurant {
   color: #000000;
 }
 
+.title-icon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 /* Conteneur pour le titre et l'icône */
 .title-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
   margin: 0 15px;
 }
 
 /* Icône du cœur alignée à droite */
+.icon-container {
+  position: relative;
+  top: -5px;
+  width: 22px;
+  height: 22px;
+}
 .icon-container i {
+  position: absolute;
   color: #101010;
   font-size: 22px;
   border: 1px;
+}
+.icon-container .fa-solid {
+  opacity: 0;
+  transition: all 1s;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+}
+.icon-container .fa-solid:hover {
+  opacity: 1;
 }
 
 /* Label "Nouveau" à droite */
