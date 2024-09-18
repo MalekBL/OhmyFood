@@ -75,10 +75,6 @@ header {
 .cta-button:hover {
   background: linear-gradient(0deg, #A56DE8, #FF85E5);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  border: 2px solid #008CFF;
-  transform: scale(1.05);
-  text-decoration: underline;
-  text-decoration-color: #89C8FA;
 }
 
 .fonctionnement-home {
@@ -160,12 +156,16 @@ h2 .restaurant {
 
 /* Style de chaque carte de restaurant */
 .restaurant-card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
   position: relative;
   background-color: #ffffff;
   border-radius: 15px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
 /* Image des cartes */
@@ -179,18 +179,14 @@ h2 .restaurant {
 
 .restaurant-card h4 {
   font-size: 18px;
-  width: 267px;
   height: 20px;
-  margin: 16px 63px 5px 0px;
   display: inline-block;
 }
 
 .restaurant-card p {
-  width: 247px;
   height: 24px;
   font-weight: 300;
   font-size: 17px;
-  margin: 0px 80px 16px 16px;
   color: #000000;
 }
 
@@ -198,6 +194,8 @@ h2 .restaurant {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  padding: 16px 25px 12px 13px;
 }
 
 /* Conteneur pour le titre et l'icône */
@@ -205,8 +203,6 @@ h2 .restaurant {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-end;
-  margin: 0 15px;
 }
 
 /* Icône du cœur alignée à droite */
@@ -318,22 +314,19 @@ header {
   z-index: 1;
 }
 
-.menu-title {
+.menu-title-container {
+  margin-bottom: 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 41px;
+}
+.menu-title-container .menu-title {
+  font-family: "Shrikhand";
   font-size: 28px;
   font-weight: 400;
-  margin-bottom: 10px;
-  height: 27px;
-  text-align: left;
-}
-
-/* Icône cœur */
-.heart {
-  color: #101010;
-  float: right;
-  border: 1px;
-  display: flex;
-  justify-content: center;
-  align-items: end;
 }
 
 .menu-section {
@@ -347,6 +340,7 @@ header {
   position: relative;
   margin-bottom: 24px;
   font-weight: 300;
+  text-transform: uppercase;
 }
 
 .section-title::after {
