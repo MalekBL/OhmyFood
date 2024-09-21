@@ -6,9 +6,9 @@ header {
   align-items: end;
 }
 
-.restaurant-image img {
+.restaurant-img {
   width: 100%;
-  height: auto;
+  height: 247px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -85,7 +85,6 @@ header {
 }
 
 .item-description {
-  color: #7f8c8d;
   font-size: 15.04px;
   font-weight: 300;
 }
@@ -104,7 +103,7 @@ header {
   margin-top: 20px;
 }
 
-.btn-explore-commander {
+.cta-button {
   display: flex;
   justify-content: center;
   align-items: center;
