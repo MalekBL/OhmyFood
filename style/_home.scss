@@ -220,6 +220,8 @@ h2 .restaurant{
         opacity: 0;
         transition: all 1s;
         background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+        color: transparent;
+        background-clip: text;
         &:hover{
             opacity: 1;
         }
