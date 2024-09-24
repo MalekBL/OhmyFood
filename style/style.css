@@ -295,11 +295,15 @@ header {
   align-items: end;
 }
 
-.restaurant-image img {
+.restaurant-image {
   width: 100%;
-  height: auto;
+  height: 247px;
+}
+.restaurant-image img {
+  height: 275px;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
 }
 
 /* Carte du menu */
@@ -374,7 +378,6 @@ header {
 }
 
 .item-description {
-  color: #7f8c8d;
   font-size: 15.04px;
   font-weight: 300;
 }
@@ -393,7 +396,7 @@ header {
   margin-top: 20px;
 }
 
-.btn-explore-commander {
+.cta-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -407,16 +410,6 @@ header {
   font-weight: bold;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
-  cursor: pointer;
-}
-
-.btn-explore-commander:hover {
-  background: linear-gradient(0deg, #A56DE8, #FF85E5);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  border: 2px solid #008CFF;
-  transform: scale(1.05);
-  text-decoration: underline;
-  text-decoration-color: #89C8FA;
   cursor: pointer;
 }
 
