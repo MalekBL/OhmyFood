@@ -1,3 +1,71 @@
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    animation: fadeOut 1s ease-in-out 3s forwards;
+}
+
+/* Styles pour les petits points */
+.dots-points {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: #99E2D0;
+    border-radius: 50%;
+    animation: bounce 0.6s infinite alternate, colorChange 1s infinite;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.2s; /* Délai pour le deuxième point */
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.4s; /* Délai pour le troisième point */
+}
+
+/* Animation de rebond */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        background-color:#9356DC;
+    }
+    50% {
+        background-color:#FF79DA;
+    }
+    100% {
+        background-color: #99E2D0;
+    }
+}
+
+/* Animation de disparition */
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; visibility: hidden; }
+}
+
 header {
     height: 63px;
     width: 100%;
@@ -102,6 +170,7 @@ header {
     gap: 20px; 
     position: relative;
     left: -5px;
+    cursor: pointer;
 }
 
 .circle {

@@ -74,9 +74,53 @@ header {
     margin-bottom: 15px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
     gap: 5px;
-    width: 100%;
     cursor: pointer;
+    height: 69px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    div:first-child {
+        flex-grow: 1;
+    }
+
+    .fa-check {
+        position: relative;
+        right: 0px;
+        width: 59px;
+        height: 69px;
+        border-radius: 0px 15px 15px 0px;
+        background-color:#99E2D0;
+        margin-right: -74px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 750ms;
+        transform: translateX(100%);
+        
+        /* Cercle blanc */
+        &::before {
+            font-size: 17px;
+            color:#99E2D0;
+            background-color: white;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &:hover {
+        .fa-check {
+            margin-right: -15px;
+            transform: translateX(0);
+        }
+    }
 }
+
+
+
 .item-name {
     font-weight: 500;
     font-size: 18px;
