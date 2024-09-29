@@ -380,6 +380,22 @@ header {
   width: 100%;
 }
 
+/* Fleche de retour */
+.back-arrow {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+.back-arrow i {
+  font-size: 24px;
+  margin-right: 0;
+}
+.back-arrow:hover {
+  color: #000000;
+}
+
 /* Carte du menu */
 .menu-card {
   padding: 20px;
@@ -411,7 +427,7 @@ header {
   margin-top: 42px;
 }
 
-/* Titre de chaque section (Entrées, Plats, Desserts) avec une ligne verte */
+/* Titre de chaque section avec une ligne verte */
 .section-title {
   font-size: 16px;
   display: inline-block;
@@ -465,12 +481,12 @@ header {
   /* Cercle blanc */
 }
 .menu-item .fa-check::before {
-  font-size: 17px;
+  font-size: 13px;
   color: #99E2D0;
   background-color: white;
   border-radius: 50%;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -570,6 +586,60 @@ footer {
   color: #FFFFFF;
 }
 
+/* Animations */
+.menu-item {
+  opacity: 0;
+  animation: zoomInRotate 0.6s ease forwards;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-section .menu-item:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.menu-section .menu-item:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.menu-section .menu-item:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+.menu-section:nth-child(2) .menu-item:nth-child(1) {
+  animation-delay: 1.2s;
+}
+
+.menu-section:nth-child(2) .menu-item:nth-child(2) {
+  animation-delay: 1.5s;
+}
+
+.menu-section:nth-child(2) .menu-item:nth-child(3) {
+  animation-delay: 1.8s;
+}
+
+.menu-section:nth-child(3) .menu-item:nth-child(1) {
+  animation-delay: 2.1s;
+}
+
+.menu-section:nth-child(3) .menu-item:nth-child(2) {
+  animation-delay: 2.4s;
+}
+
+.menu-section:nth-child(3) .menu-item:nth-child(3) {
+  animation-delay: 2.7s;
+}
+
+/* Keyframes pour l'animation d'apparition */
+@keyframes zoomInRotate {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) rotate(-10deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
 * {
   margin: 0;
   padding: 0;
