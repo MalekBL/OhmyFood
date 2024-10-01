@@ -364,9 +364,10 @@ footer {
 
 header {
   background-color: white;
-  padding: 14px;
+  padding: 14px 0px;
   text-align: left;
-  align-items: end;
+  align-items: center;
+  display: flex;
 }
 
 .restaurant-image {
@@ -381,18 +382,18 @@ header {
 }
 
 /* Fleche de retour */
-.back-arrow {
+.back {
   position: absolute;
-  top: 20px;
-  left: 20px;
   color: #333;
   transition: color 0.3s ease;
+  left: 20px;
+  top: 33px;
 }
-.back-arrow i {
+.back i {
   font-size: 24px;
   margin-right: 0;
 }
-.back-arrow:hover {
+.back:hover {
   color: #000000;
 }
 
@@ -464,11 +465,17 @@ header {
 }
 .menu-item div:first-child {
   flex-grow: 1;
+  text-wrap: nowrap;
+  overflow: hidden;
+}
+.menu-item div:first-child .item-name, .menu-item div:first-child .item-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-item .fa-check {
   position: relative;
   right: 0px;
-  width: 59px;
+  min-width: 59px;
   height: 69px;
   border-radius: 0px 15px 15px 0px;
   background-color: #99E2D0;
@@ -477,7 +484,6 @@ header {
   justify-content: center;
   align-items: center;
   transition: all 750ms;
-  transform: translateX(100%);
   /* Cercle blanc */
 }
 .menu-item .fa-check::before {
@@ -593,39 +599,39 @@ footer {
   transition: all 0.3s ease-in-out;
 }
 
-.menu-section .menu-item:nth-child(1) {
+.menu-section .menu-item:nth-child(2) {
   animation-delay: 0.3s;
 }
 
-.menu-section .menu-item:nth-child(2) {
+.menu-section .menu-item:nth-child(3) {
   animation-delay: 0.6s;
 }
 
-.menu-section .menu-item:nth-child(3) {
+.menu-section .menu-item:nth-child(4) {
   animation-delay: 0.9s;
 }
 
-.menu-section:nth-child(2) .menu-item:nth-child(1) {
+.menu-section:nth-child(2) .menu-item:nth-child(2) {
   animation-delay: 1.2s;
 }
 
-.menu-section:nth-child(2) .menu-item:nth-child(2) {
+.menu-section:nth-child(2) .menu-item:nth-child(3) {
   animation-delay: 1.5s;
 }
 
-.menu-section:nth-child(2) .menu-item:nth-child(3) {
+.menu-section:nth-child(2) .menu-item:nth-child(4) {
   animation-delay: 1.8s;
 }
 
-.menu-section:nth-child(3) .menu-item:nth-child(1) {
+.menu-section:nth-child(3) .menu-item:nth-child(2) {
   animation-delay: 2.1s;
 }
 
-.menu-section:nth-child(3) .menu-item:nth-child(2) {
+.menu-section:nth-child(3) .menu-item:nth-child(3) {
   animation-delay: 2.4s;
 }
 
-.menu-section:nth-child(3) .menu-item:nth-child(3) {
+.menu-section:nth-child(3) .menu-item:nth-child(4) {
   animation-delay: 2.7s;
 }
 
