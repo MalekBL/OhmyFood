@@ -279,7 +279,6 @@ h2 .restaurant {
 /* Icône du cœur alignée à droite */
 .icon-container {
   position: relative;
-  top: -5px;
   width: 22px;
   height: 22px;
 }
@@ -314,54 +313,6 @@ h2 .restaurant {
   padding: 5px 10px;
 }
 
-footer {
-  background-color: #353535;
-  padding: 20px;
-  color: #ffffff;
-  height: 186px;
-}
-
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  height: 186px;
-  gap: 16px;
-}
-
-.footer-logo {
-  font-family: "Shrikhand";
-  font-size: 18px;
-  color: #ffffff;
-  margin-bottom: 16px;
-  width: 139px;
-  height: 27px;
-  font-weight: 400;
-}
-
-.footer-links {
-  list-style: none;
-  padding: 0;
-  width: 190px;
-  height: 99px;
-}
-
-.footer-links li {
-  font-size: 16px;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.footer-links li i {
-  margin-right: 10px;
-  width: 11px;
-  height: 13px;
-  margin-top: 2px;
-  color: #FFFFFF;
-}
-
 @media (min-width: 1024px) {
   /* Section Explorer */
   .explore {
@@ -379,15 +330,16 @@ footer {
     width: auto;
   }
   /* Fonctionnement Home - alignement horizontal */
-  .fonctionnement-home {
+  .step-container {
     display: flex;
     flex-direction: row;
     gap: 30px;
-    margin: 50px 90px;
+  }
+  .fonctionnement-home {
+    padding: 0px 46px;
   }
   .fonctionnement-home h2 {
     font-size: 24px;
-    margin: 0 0 20px 0; /* Ajuster les marges pour espacer le titre des boutons */
   }
   .step {
     flex: 1;
@@ -428,24 +380,6 @@ footer {
   }
   .restaurant-card p {
     font-size: 18px;
-  }
-  /* Footer */
-  footer {
-    padding: 40px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .footer-container {
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-  }
-  .footer-links {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    width: auto;
   }
 }
 header {
@@ -631,54 +565,6 @@ header {
   cursor: pointer;
 }
 
-footer {
-  background-color: #353535;
-  padding: 20px;
-  color: #ffffff;
-  height: 186px;
-}
-
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  height: 186px;
-  gap: 16px;
-}
-
-.footer-logo {
-  font-family: "Shrikhand";
-  font-size: 18px;
-  color: #ffffff;
-  margin-bottom: 16px;
-  width: 139px;
-  height: 27px;
-  font-weight: 400;
-}
-
-.footer-links {
-  list-style: none;
-  padding: 0;
-  width: 190px;
-  height: 99px;
-}
-
-.footer-links li {
-  font-size: 16px;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.footer-links li i {
-  margin-right: 10px;
-  width: 11px;
-  height: 13px;
-  margin-top: 2px;
-  color: #FFFFFF;
-}
-
 /* Animations */
 .menu-item {
   opacity: 0;
@@ -733,8 +619,99 @@ footer {
     transform: scale(1) rotate(0deg);
   }
 }
+@media (min-width: 1024px) {
+  .menu-title-container {
+    justify-content: center;
+    gap: 24px;
+  }
+  .icone-container {
+    top: 0px;
+  }
+  .menu-card {
+    padding: 50px 80px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
   font-family: "Roboto";
+}
+
+footer {
+  background-color: #353535;
+  padding: 20px;
+  color: #ffffff;
+  height: 100%;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 186px;
+  gap: 16px;
+}
+
+.footer-logo {
+  font-family: "Shrikhand";
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 16px;
+  width: 139px;
+  height: 27px;
+  font-weight: 400;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  width: 190px;
+  height: 99px;
+}
+
+.footer-links li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer-links li i {
+  margin-right: 10px;
+  width: 11px;
+  height: 13px;
+  margin-top: 2px;
+  color: #FFFFFF;
+}
+
+@media (min-width: 1024px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  footer ul:first-child li {
+    font-weight: 500;
+  }
+  .footer-container {
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 114px;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    top: 20px;
+  }
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: auto;
+  }
 }/*# sourceMappingURL=style.css.map */
