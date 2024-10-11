@@ -305,8 +305,8 @@ h2 .restaurant {
   position: absolute;
   width: 61.37px;
   height: 16px;
-  top: 15px;
-  right: 9px;
+  top: 40px;
+  right: 40px;
   background-color: #99E2D0;
   color: #008766;
   font-size: 14px;
@@ -337,6 +337,7 @@ h2 .restaurant {
   }
   .fonctionnement-home {
     padding: 0px 46px;
+    max-width: 1440px;
   }
   .fonctionnement-home h2 {
     font-size: 24px;
@@ -377,6 +378,7 @@ h2 .restaurant {
   }
   .restaurant-card h4 {
     font-size: 20px;
+    margin-bottom: 10px;
   }
   .restaurant-card p {
     font-size: 18px;
@@ -629,6 +631,10 @@ header {
   }
   .menu-card {
     padding: 50px 80px;
+  }
+  .container-plats {
+    margin: auto;
+    max-width: 600px;
   }
 }
 * {
