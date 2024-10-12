@@ -271,6 +271,7 @@ h2 .restaurant{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 5px;
 }
 
 /* Icône du cœur alignée à droite */
@@ -367,18 +368,17 @@ h2 .restaurant{
   .restaurant-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 50px 100px;
+    max-width: 1440px;
   }
   .restaurant-card {
     max-width: 100%;
-    padding: 20px;
     display: flex;
     flex-direction: column;
   }
 
     .restaurant-card {
         max-width: 100%;
-        padding: 20px;
         display: flex;
         flex-direction: column;
     }
