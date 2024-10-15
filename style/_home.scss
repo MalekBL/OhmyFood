@@ -31,11 +31,13 @@
 }
 
 .dot:nth-child(2) {
-    animation-delay: 0.2s; /* Délai pour le deuxième point */
+    animation-delay: 0.2s;
+    /* Délai pour le deuxième point */
 }
 
 .dot:nth-child(3) {
-    animation-delay: 0.4s; /* Délai pour le troisième point */
+    animation-delay: 0.4s;
+    /* Délai pour le troisième point */
 }
 
 /* Animation de rebond */
@@ -43,6 +45,7 @@
     0% {
         transform: translateY(0);
     }
+
     100% {
         transform: translateY(-20px);
     }
@@ -50,11 +53,13 @@
 
 @keyframes colorChange {
     0% {
-        background-color:#9356DC;
+        background-color: #9356DC;
     }
+
     50% {
-        background-color:#FF79DA;
+        background-color: #FF79DA;
     }
+
     100% {
         background-color: #99E2D0;
     }
@@ -62,8 +67,14 @@
 
 /* Animation de disparition */
 @keyframes fadeOut {
-    0% { opacity: 1; }
-    100% { opacity: 0; visibility: hidden; }
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
 header {
@@ -97,14 +108,14 @@ header {
 }
 
 .explore {
-    text-align: center; 
+    text-align: center;
     padding: 39px;
     border-radius: 8px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     background-color: $lightgrey;
 }
 
@@ -141,15 +152,16 @@ header {
 
 
 .cta-button:hover {
-    background: linear-gradient(0deg, #A56DE8, #FF85E5); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    background: linear-gradient(0deg, #A56DE8, #FF85E5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .fonctionnement-home {
+    margin: auto;
     margin-top: 40px;
     margin-bottom: 68px;
-    text-align: left; 
-    padding-left: 20px ; 
+    text-align: left;
+    padding-left: 20px;
 }
 
 .fonctionnement-home h2 {
@@ -162,36 +174,36 @@ header {
 .step {
     display: flex;
     align-items: center;
-    background-color: $lightgrey; 
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
-    padding: 20px; 
-    border-radius: 20px; 
-    margin: 20px; 
-    gap: 20px; 
+    background-color: $lightgrey;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+    gap: 20px;
     position: relative;
     left: -5px;
     cursor: pointer;
 }
 
 .circle {
-    width: 24px; 
+    width: 24px;
     height: 24px;
-    background-color: #9356DC; 
+    background-color: #9356DC;
     color: white;
-    border-radius: 50%; 
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
     position: absolute;
-    left: -15px; 
+    left: -15px;
 }
 
 .step-content {
-    margin-left: 50px; 
+    margin-left: 50px;
     display: flex;
     flex-direction: row;
-    align-items: center; 
+    align-items: center;
     justify-content: flex-start;
     width: 100%;
 }
@@ -211,19 +223,20 @@ header {
 
 /*Restaurant*/
 
-.restaurant{
+.restaurant {
     display: flex;
     flex-direction: column;
-    gap: 18px;   
+    gap: 18px;
     padding: 57px 18px;
     background-color: $lightgrey;
 }
 
-h2 .restaurant{
+h2 .restaurant {
     width: 275px;
     size: 24px;
 
 }
+
 /* Style de chaque carte de restaurant */
 .restaurant-card {
     text-decoration: none;
@@ -256,9 +269,10 @@ h2 .restaurant{
     height: 24px;
     font-weight: 300;
     font-size: 17px;
-    color:#000000;
+    color: #000000;
 }
-.title-icon-container{
+
+.title-icon-container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -279,23 +293,27 @@ h2 .restaurant{
     position: relative;
     width: 22px;
     height: 22px;
+
     i {
         position: absolute;
-        color:#101010;
+        color: #101010;
         font-size: 22px;
         border: 1px;
     }
-    .fa-solid{
+
+    .fa-solid {
         opacity: 0;
         transition: all 1s;
         background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
         color: transparent;
         background-clip: text;
-        &:hover{
+
+        &:hover {
             opacity: 1;
         }
     }
 }
+
 /* Label "Nouveau" à droite */
 .new-label {
     position: absolute;
@@ -342,11 +360,12 @@ h2 .restaurant{
     .fonctionnement-home {
         padding: 0px 46px;
         max-width: 1440px;
-        h2{
-        font-size: 24px;
+
+        h2 {
+            font-size: 24px;
 
         }
-        
+
     }
 
     .step {
@@ -363,19 +382,15 @@ h2 .restaurant{
 
     /* Restaurants section en grille */
     .restaurant {
-    padding: 60px 46px;
-  }
-  .restaurant-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px 100px;
-    max-width: 1440px;
-  }
-  .restaurant-card {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
+        padding: 60px 46px;
+    }
+
+    .restaurant-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 100px;
+        max-width: 1440px;
+    }
 
     .restaurant-card {
         max-width: 100%;
@@ -394,5 +409,13 @@ h2 .restaurant{
 
     .restaurant-card p {
         font-size: 18px;
+    }
+    .restaurant-content{
+        margin: auto;
+        max-width: 1440px;
+        width: 100%;
+        h2{
+            margin-bottom: 28px;
+        }
     }
 }

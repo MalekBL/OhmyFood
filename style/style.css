@@ -32,11 +32,13 @@
 }
 
 .dot:nth-child(2) {
-  animation-delay: 0.2s; /* Délai pour le deuxième point */
+  animation-delay: 0.2s;
+  /* Délai pour le deuxième point */
 }
 
 .dot:nth-child(3) {
-  animation-delay: 0.4s; /* Délai pour le troisième point */
+  animation-delay: 0.4s;
+  /* Délai pour le troisième point */
 }
 
 /* Animation de rebond */
@@ -148,6 +150,7 @@ header {
 }
 
 .fonctionnement-home {
+  margin: auto;
   margin-top: 40px;
   margin-bottom: 68px;
   text-align: left;
@@ -368,11 +371,6 @@ h2 .restaurant {
     display: flex;
     flex-direction: column;
   }
-  .restaurant-card {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
   .restaurant-card img {
     height: 250px;
   }
@@ -382,6 +380,14 @@ h2 .restaurant {
   }
   .restaurant-card p {
     font-size: 18px;
+  }
+  .restaurant-content {
+    margin: auto;
+    max-width: 1440px;
+    width: 100%;
+  }
+  .restaurant-content h2 {
+    margin-bottom: 28px;
   }
 }
 header {
