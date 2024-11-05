@@ -36,6 +36,7 @@ header {
 }
 
 /* Carte du menu */
+
 .menu-card {
     padding: 20px;
     background-color: #f9f9f9;
@@ -46,27 +47,29 @@ header {
     position: relative;
     z-index: 1;
     max-width: 1024px;
-}
 
-.menu-title-container {
-    margin-bottom: 10px;
-    text-align: left;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 41px;
+    .menu-title-container {
+        margin-bottom: 10px;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 41px;
 
-    .menu-title {
-        font-family: "Shrikhand";
-        font-size: 28px;
-        font-weight: 400;
+        .menu-title {
+            font-family: "Shrikhand";
+            font-size: 28px;
+            font-weight: 400;
+        }
+
+        .menu-section {
+            margin-top: 42px;
+        }
     }
 }
 
-.menu-section {
-    margin-top: 42px;
-}
+
 
 /* Titre de chaque section avec une ligne verte */
 .section-title {
@@ -76,16 +79,16 @@ header {
     margin-bottom: 24px;
     font-weight: 300;
     text-transform: uppercase;
-}
 
-.section-title::after {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 50%;
-    height: 3px;
-    background-color: #2ecc71;
+    .section-title::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 50%;
+        height: 3px;
+        background-color: #2ecc71;
+    }
 }
 
 .menu-item {
@@ -154,18 +157,18 @@ header {
     font-weight: 500;
     font-size: 18px;
     margin-bottom: 5px;
-}
 
-.item-description {
-    font-size: 15.04px;
-    font-weight: 300;
-}
+    .description {
+        font-size: 15.04px;
+        font-weight: 300;
 
-.item-price {
-    font-weight: 700;
-    font-size: 15.04px;
-    color: #353535;
-    margin: 13.5px;
+        .price {
+            font-weight: 700;
+            font-size: 15.04px;
+            color: #353535;
+            margin: 13.5px;
+        }
+    }
 }
 
 /* Bouton Commander */

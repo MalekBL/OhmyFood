@@ -438,8 +438,7 @@ header {
   z-index: 1;
   max-width: 1024px;
 }
-
-.menu-title-container {
+.menu-card .menu-title-container {
   margin-bottom: 10px;
   text-align: left;
   display: flex;
@@ -448,13 +447,12 @@ header {
   align-items: center;
   padding-right: 41px;
 }
-.menu-title-container .menu-title {
+.menu-card .menu-title-container .menu-title {
   font-family: "Shrikhand";
   font-size: 28px;
   font-weight: 400;
 }
-
-.menu-section {
+.menu-card .menu-title-container .menu-section {
   margin-top: 42px;
 }
 
@@ -467,8 +465,7 @@ header {
   font-weight: 300;
   text-transform: uppercase;
 }
-
-.section-title::after {
+.section-title .section-title::after {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -538,13 +535,11 @@ header {
   font-size: 18px;
   margin-bottom: 5px;
 }
-
-.item-description {
+.item-name .description {
   font-size: 15.04px;
   font-weight: 300;
 }
-
-.item-price {
+.item-name .description .price {
   font-weight: 700;
   font-size: 15.04px;
   color: #353535;
