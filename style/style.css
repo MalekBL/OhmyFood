@@ -225,7 +225,7 @@ header {
 
 h2 .restaurant {
   width: 275px;
-  size: 24px;
+  font-size: 24px;
 }
 
 /* Style de chaque carte de restaurant */

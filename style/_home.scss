@@ -233,7 +233,7 @@ header {
 
 h2 .restaurant {
     width: 275px;
-    size: 24px;
+    font-size: 24px;
 
 }
 
@@ -410,11 +410,13 @@ h2 .restaurant {
     .restaurant-card p {
         font-size: 18px;
     }
-    .restaurant-content{
+
+    .restaurant-content {
         margin: auto;
         max-width: 1440px;
         width: 100%;
-        h2{
+
+        h2 {
             margin-bottom: 28px;
         }
     }
