@@ -228,8 +228,13 @@ h2 .restaurant {
   font-size: 24px;
 }
 
-/* Style de chaque carte de restaurant */
-.restaurant-card {
+/* Image des cartes */
+.restaurant-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.restaurant-wrapper .restaurant-card {
   text-decoration: none;
   color: inherit;
   display: block;
@@ -241,23 +246,19 @@ h2 .restaurant {
   flex-direction: column;
   cursor: pointer;
 }
-
-/* Image des cartes */
-.restaurant-card img {
+.restaurant-wrapper .restaurant-card img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 231px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-
-.restaurant-card h4 {
+.restaurant-wrapper .restaurant-card h4 {
   font-size: 18px;
   height: 20px;
   display: inline-block;
 }
-
-.restaurant-card p {
+.restaurant-wrapper .restaurant-card p {
   height: 24px;
   font-weight: 300;
   font-size: 17px;
@@ -371,14 +372,14 @@ h2 .restaurant {
     display: flex;
     flex-direction: column;
   }
-  .restaurant-card img {
+  img {
     height: 250px;
   }
-  .restaurant-card h4 {
+  h4 {
     font-size: 20px;
     margin-bottom: 10px;
   }
-  .restaurant-card p {
+  p {
     font-size: 18px;
   }
   .restaurant-content {

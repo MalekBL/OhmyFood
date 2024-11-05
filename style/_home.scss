@@ -237,39 +237,46 @@ h2 .restaurant {
 
 }
 
-/* Style de chaque carte de restaurant */
-.restaurant-card {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-    position: relative;
-    background-color: #ffffff;
-    border-radius: 15px;
-    overflow: hidden;
+/* Image des cartes */
+
+.restaurant-wrapper {
     display: flex;
     flex-direction: column;
-    cursor: pointer;
-}
+    gap: 15px;
 
-/* Image des cartes */
-.restaurant-card img {
-    object-fit: cover;
-    height: 231px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
+    .restaurant-card {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        position: relative;
+        background-color: #ffffff;
+        border-radius: 15px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
 
-.restaurant-card h4 {
-    font-size: 18px;
-    height: 20px;
-    display: inline-block;
-}
 
-.restaurant-card p {
-    height: 24px;
-    font-weight: 300;
-    font-size: 17px;
-    color: #000000;
+        img {
+            object-fit: cover;
+            height: 231px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        h4 {
+            font-size: 18px;
+            height: 20px;
+            display: inline-block;
+        }
+
+        p {
+            height: 24px;
+            font-weight: 300;
+            font-size: 17px;
+            color: #000000;
+        }
+    }
 }
 
 .title-icon-container {
@@ -398,16 +405,16 @@ h2 .restaurant {
         flex-direction: column;
     }
 
-    .restaurant-card img {
+    img {
         height: 250px;
     }
 
-    .restaurant-card h4 {
+    h4 {
         font-size: 20px;
         margin-bottom: 10px;
     }
 
-    .restaurant-card p {
+    p {
         font-size: 18px;
     }
 
