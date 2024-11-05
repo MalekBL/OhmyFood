@@ -497,7 +497,8 @@ header {
   text-wrap: nowrap;
   overflow: hidden;
 }
-.menu-item div:first-child .item-name, .menu-item div:first-child .item-description {
+.menu-item div:first-child .item-name,
+.menu-item div:first-child .item-description {
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -590,6 +591,10 @@ header {
 
 .menu-section .menu-item:nth-child(4) {
   animation-delay: 0.9s;
+}
+
+.menu-section .menu-item:nth-child(5) {
+  animation-delay: 1.2s;
 }
 
 .menu-section:nth-child(2) .menu-item:nth-child(2) {
