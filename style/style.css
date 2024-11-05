@@ -660,16 +660,14 @@ footer {
   color: #ffffff;
   height: 100%;
 }
-
-.footer-container {
+footer .footer-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   height: 186px;
   gap: 16px;
 }
-
-.footer-logo {
+footer .footer-container .footer-logo {
   font-family: "Shrikhand";
   font-size: 18px;
   color: #ffffff;
@@ -678,23 +676,20 @@ footer {
   height: 27px;
   font-weight: 400;
 }
-
-.footer-links {
+footer .footer-container .footer-links {
   list-style: none;
   padding: 0;
   width: 190px;
   height: 99px;
 }
-
-.footer-links li {
+footer .footer-container .footer-links li {
   font-size: 16px;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
   gap: 5px;
 }
-
-.footer-links li i {
+footer .footer-container .footer-links li i {
   margin-right: 10px;
   width: 11px;
   height: 13px;
@@ -708,15 +703,7 @@ footer {
     justify-content: space-between;
     align-items: center;
   }
-  footer ul {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-  }
-  footer ul:first-child li {
-    font-weight: 500;
-  }
-  .footer-container {
+  footer .footer-container {
     flex-direction: row-reverse;
     width: 100%;
     height: 114px;
@@ -725,10 +712,18 @@ footer {
     position: relative;
     top: 20px;
   }
-  .footer-links {
+  footer .footer-container .footer-links {
     display: flex;
     justify-content: space-between;
     gap: 30px;
     width: auto;
+  }
+  footer .footer-container .footer-links ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  footer .footer-container .footer-links ul:first-child li {
+    font-weight: 500;
   }
 }/*# sourceMappingURL=style.css.map */
